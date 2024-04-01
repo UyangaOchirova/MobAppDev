@@ -63,11 +63,12 @@ public class WebViewFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_web_view, container, false);
     }
+
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        WebView webView = view.findViewById(R.id.webView);
+        WebView webView = view.findViewById(R.id.WebViewFragment);
         webView.loadUrl("https://www.tutu.ru/geo/rossiya/kurort/baikal/");
     }
 }

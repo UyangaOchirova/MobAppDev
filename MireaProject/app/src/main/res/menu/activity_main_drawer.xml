@@ -18,9 +18,9 @@
             android:title="@string/menu_slideshow"/>
 
         <item
-            android:id="@+id/webview"
+            android:id="@+id/WebViewFragment"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/webview" />
+            android:title="WebViewFragment" />
         <item
             android:id="@+id/dataFragment"
             android:icon="@drawable/ic_menu_slideshow"

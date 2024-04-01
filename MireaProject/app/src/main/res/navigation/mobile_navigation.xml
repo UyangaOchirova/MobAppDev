@@ -22,8 +22,9 @@
         android:name="com.mirea.uyangaochirova.mireaproject.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
     <fragment
-        android:id="@+id/webViewFragment"
+        android:id="@+id/WebViewFragment"
         android:name="com.mirea.uyangaochirova.mireaproject.WebViewFragment"
         android:label="@string/webview"
         tools:layout="@layout/fragment_web_view" />

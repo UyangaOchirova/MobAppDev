@@ -25,5 +25,9 @@
             android:id="@+id/dataFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/dataFragment" />
+        <item
+            android:id="@+id/workerFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="WorkerFragment" />
     </group>
 </menu>

@@ -29,5 +29,17 @@
             android:id="@+id/workerFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="WorkerFragment" />
+        <item
+            android:id="@+id/compassFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="CompassFragment" />
+        <item
+            android:id="@+id/cameraFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="CameraFragment" />
+        <item
+            android:id="@+id/microphoneFragment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="MicrophoneFragment" />
     </group>
 </menu>

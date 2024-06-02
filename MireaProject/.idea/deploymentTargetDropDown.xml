@@ -5,6 +5,9 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="compassFragment">
+        <State />
+      </entry>
     </value>
   </component>
 </project>

@@ -38,5 +38,21 @@
         android:name="com.mirea.uyangaochirova.mireaproject.WorkerFragment"
         android:label="fragment_worker"
         tools:layout="@layout/fragment_worker" />
+    <fragment
+        android:id="@+id/compassFragment"
+        android:name="com.mirea.uyangaochirova.mireaproject.CompassFragment"
+        android:label="fragment_compass"
+        tools:layout="@layout/fragment_compass" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.mirea.uyangaochirova.mireaproject.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/microphoneFragment"
+        android:name="com.mirea.uyangaochirova.mireaproject.MicrophoneFragment"
+        android:label="fragment_microphone"
+        tools:layout="@layout/fragment_microphone" />
+
 
 </navigation>

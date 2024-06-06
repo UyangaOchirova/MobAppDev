@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         des.setText(getTextFromFile());
     }
 
-    public void saveButton(View view){
+    public void onClick(View view){
         String string = date.getText().toString();
         String string1 = des.getText().toString();
         FileOutputStream outputStream;

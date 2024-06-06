@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+       android:id="@+id/nav_gallery"
         android:name="com.mirea.uyangaochirova.mireaproject.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
@@ -53,6 +53,16 @@
         android:name="com.mirea.uyangaochirova.mireaproject.MicrophoneFragment"
         android:label="fragment_microphone"
         tools:layout="@layout/fragment_microphone" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.mirea.uyangaochirova.mireaproject.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/fileWorkFragment"
+        android:name="com.mirea.uyangaochirova.mireaproject.FileWorkFragment"
+        android:label="fragment_file_work"
+        tools:layout="@layout/fragment_file_work" />
 
 
 </navigation>

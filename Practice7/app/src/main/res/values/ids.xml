@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="signedInButtons" type="id" />
+    <item name="signOutButton" type="id" />
+    <item name="verifyEmailButton" type="id" />
+    <item name="emailPasswordFields" type="id" />
+    <item name="emailEdit" type="id" />
+    <item name="passwordEdit" type="id" />
+    <item name="emailPasswordButtons" type="id" />
+    <item name="signInButton" type="id" />
+    <item name="registerButton" type="id" />
+    <item name="space" type="id" />
+    <item name="imageView" type="id" />
+    <item name="textView" type="id" />
+    <item name="statusTextView" type="id" />
+    <item name="detailTextView" type="id" />
+</resources>

@@ -49,5 +49,9 @@
             android:id="@+id/fileWorkFragment"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="FileWorkFragment" />
+        <item
+            android:id="@+id/network"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="NetworkFragment" />
     </group>
 </menu>

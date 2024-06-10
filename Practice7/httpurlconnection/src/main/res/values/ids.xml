@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textCity" type="id" />
+    <item name="textRegion" type="id" />
+    <item name="textCountry" type="id" />
+    <item name="textWeather" type="id" />
+</resources>

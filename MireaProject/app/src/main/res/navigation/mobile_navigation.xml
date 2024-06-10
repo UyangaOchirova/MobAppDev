@@ -63,6 +63,11 @@
         android:name="com.mirea.uyangaochirova.mireaproject.FileWorkFragment"
         android:label="fragment_file_work"
         tools:layout="@layout/fragment_file_work" />
+    <fragment
+        android:id="@+id/network"
+        android:name="com.mirea.uyangaochirova.mireaproject.Network"
+        android:label="fragment_network"
+        tools:layout="@layout/fragment_network" />
 
 
 </navigation>

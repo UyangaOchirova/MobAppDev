@@ -12,8 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.util.List;
-
 public class MainActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,11 +21,12 @@ public class MainActivity extends AppCompatActivity {
         AppDatabase db = App.getInstance().getDatabase();
         EmployeeDao employeeDao = db.employeeDao();
         Employee employee = new Employee();
+
         employee.id = 1;
-        employee.name = "John Smith";
-        employee.salary = 10000;
-        // запись сотрудников в базу
+        employee.name = "Super-hero";
+        employee.salary = 1000;
         employeeDao.insert(employee);
+
         // Загрузка всех работников
         List<Employee> employees = employeeDao.getAll();
         // Получение определенного работника с id = 1

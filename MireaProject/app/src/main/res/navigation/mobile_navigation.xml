@@ -68,6 +68,11 @@
         android:name="com.mirea.uyangaochirova.mireaproject.Network"
         android:label="fragment_network"
         tools:layout="@layout/fragment_network" />
+    <fragment
+        android:id="@+id/establishments"
+        android:name="com.mirea.uyangaochirova.mireaproject.Establishments"
+        android:label="fragment_establishments"
+        tools:layout="@layout/fragment_establishments" />
 
 
 </navigation>

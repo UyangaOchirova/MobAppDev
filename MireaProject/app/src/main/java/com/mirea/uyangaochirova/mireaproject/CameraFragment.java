@@ -5,9 +5,11 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -41,14 +43,6 @@ public class CameraFragment extends Fragment {
         }
     }
 
-    private void startCamera() {
-        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if (takePictureIntent.resolveActivity(requireActivity().getPackageManager()) != null) {
-            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
-        } else {
-            Toast.makeText(requireContext(), "Невозможно открыть камеру", Toast.LENGTH_SHORT).show();
-        }
-    }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -61,18 +55,30 @@ public class CameraFragment extends Fragment {
             }
         }
     }
-
+    private void startCamera() {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(requireActivity().getPackageManager()) != null) {
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);  // Запускаем камеру для получения изображения
+        } else {
+            Toast.makeText(requireContext(), "Невозможно открыть камеру", Toast.LENGTH_SHORT).show();
+        }
+    }
     @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == Activity.RESULT_OK) {
+            Log.i("MyTag", "Фотография успешно получена");
+            assert data != null;
             Bundle extras = data.getExtras();
+            assert extras != null;
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             ImageView imageView = requireView().findViewById(R.id.photo_image_view);
             // Отобразить изображение в ImageView
             imageView.setImageBitmap(imageBitmap);
             // Сохранить изображение
             saveImageToStorage(imageBitmap);
+        } else {
+            Log.e("MyTag", "Ошибка при получении фотографии");
         }
     }
 

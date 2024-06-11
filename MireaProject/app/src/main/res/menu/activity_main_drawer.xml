@@ -53,5 +53,9 @@
             android:id="@+id/network"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="NetworkFragment" />
+        <item
+            android:id="@+id/establishments"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="EstablishmentsFragment" />
     </group>
 </menu>

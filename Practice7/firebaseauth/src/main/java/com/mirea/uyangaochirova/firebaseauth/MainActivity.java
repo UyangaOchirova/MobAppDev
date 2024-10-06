@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bind = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(bind.getRoot());
-//        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
         mAuth = FirebaseAuth.getInstance();
 
         bind.signInButton.setOnClickListener(v ->

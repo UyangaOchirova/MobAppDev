@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "MyWords"
 include ':app'
+include ':data'
+include ':domain'

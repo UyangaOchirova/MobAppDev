@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.mirea.uyangaochirova.movieproject.R;
 
 import data.repository.MovieRepositoryImpl;
+import data.storage.MovieStorage;
+import data.storage.sharedpref.SharedPrefMovieStorage;
 import domain.models.Movie;
 import domain.repository.MovieRepository;
 import domain.usecases.GetFavoriteFilmUseCase;
@@ -24,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText text;
     private TextView textView;
-    private MovieRepository movieRepository;
+//    private MovieRepository movieRepository;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +37,10 @@ public class MainActivity extends AppCompatActivity {
 
         text = findViewById(R.id.editTextMovie);
         textView = findViewById(R.id.textViewMovie);
-        movieRepository = new MovieRepositoryImpl(this);
+
+        MovieStorage sharedPrefMovieStorage = new SharedPrefMovieStorage(this);
+        MovieRepository movieRepository = new MovieRepositoryImpl(sharedPrefMovieStorage);
+//        movieRepository = new MovieRepositoryImpl(this);
 
         findViewById(R.id.buttonSaveMovie).setOnClickListener(new View.OnClickListener() {
             @Override

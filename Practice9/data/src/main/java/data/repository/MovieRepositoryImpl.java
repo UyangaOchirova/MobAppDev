@@ -1,12 +1,13 @@
 package data.repository;
 
+import data.storage.MovieStorage;
 import domain.models.Movie;
 import domain.repository.MovieRepository;
 import presentation.MainActivity;
 
 public class MovieRepositoryImpl implements MovieRepository {
 
-    public MovieRepositoryImpl(MainActivity mainActivity) {
+    public MovieRepositoryImpl(MovieStorage sharedPrefMovieStorage) {
     }
 
     @Override

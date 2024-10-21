@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "309707671389",
+    "project_id": "mywords-1fc78",
+    "storage_bucket": "mywords-1fc78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309707671389:android:b604c1af35243b6249cab4",
+        "android_client_info": {
+          "package_name": "com.mirea.uyangaochirova.mywords"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjeJcG160CjXI4gSEGxWa0yfSPSAOrBUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
